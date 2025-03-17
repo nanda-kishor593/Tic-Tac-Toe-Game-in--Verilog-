@@ -1,0 +1,54 @@
+🎮 Tic-Tac-Toe Game Using Verilog
+
+📌 Overview
+
+This project implements a Tic-Tac-Toe game using Verilog HDL, allowing two players to take turns marking spaces on a 3×3 grid.
+The design includes game logic for handling player turns, checking for a win or draw, and displaying the results.
+It can be simulated in software or implemented on an FPGA for real-time gameplay.
+
+🚦 Features
+
+3×3 grid representation using registers
+Turn-based player input handling
+Win, draw, and game-over detection
+7-segment display support (for FPGA implementation)
+Testbench for simulation and verification
+
+🛠️ Tools & Technologies
+
+Verilog HDL for digital logic design
+ModelSim / Xilinx Vivado / Quartus Prime for simulation
+FPGA support (optional) for hardware deployment
+
+📂 Repository Structure
+
+📁 Tic-Tac-Toe-Verilog
+│── 📁 src          # Verilog source files
+│── 📁 testbench    # Testbench for simulation
+│── 📁 docs         # Project documentation
+│── README.md       # Project overview and usage instructions
+
+🚀 How to Run
+
+Simulation :
+
+Open the Verilog files in ModelSim, Vivado, or Quartus Prime.
+Run the testbench to verify game logic and functionality.
+
+FPGA Implementation:
+
+Load the Verilog code onto an FPGA.
+Connect an input interface (switches/buttons) for player moves.
+Use an LED matrix or 7-segment display to visualize the game board.
+
+🎯 Game Logic:
+
+Game Board: A 3×3 matrix is maintained using registers.
+Player Turns: Players take alternate turns marking an available cell.
+Win Condition: The game checks for three consecutive marks (row, column, or diagonal).
+Draw Condition: If all cells are filled without a winner, the game ends in a draw.
+Reset Option: The game can be restarted after completion.
+
+
+
+
